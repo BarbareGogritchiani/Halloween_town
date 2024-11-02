@@ -29,6 +29,7 @@ city.add_shop(shop3)
 # city.simulate_demand()
 # city.report()
 
+
 shop3.adjust_price("Sulliva",40) #in this case price won't be changed
 shop1.adjust_price("Zombie",40) #price will be changed
 
@@ -47,6 +48,7 @@ customer3 = Customer("luka",400)
 customer1.add_to_shopping_list("Zombie")
 customer1.add_to_shopping_list("Ghost")
 
+
 customer2.add_to_shopping_list("Sherrif")
 customer2.add_to_shopping_list("Vampire")
 customer2.add_to_shopping_list("Ghost")
@@ -62,9 +64,14 @@ customer3.buy_costume(shop2, "Cruella de Vil", 1) #this costume isn't in this sh
 customer3.buy_costume(shop3, "Cruella de Vil", 1)
 
 
-#report
+#report for each customer
 customer1.shop_report()
 customer2.shop_report()
 customer3.shop_report()
 
+
+#checking polymorphism
+city.report()
+customer1.report()
+shop1.report()
 

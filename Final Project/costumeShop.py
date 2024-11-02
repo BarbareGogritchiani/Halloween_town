@@ -52,3 +52,10 @@ class CostumeShop:
             price = self.prices[costume]
             demand = self.demand[costume]
             print(f"  {costume}: {stock} in stock, Price: {price}, Demand: {demand}")
+#for polymorphism
+    def report(self):
+        print(f"Shop Report: {self.name}")
+        for costume, stock in self.costumes.items():
+            price = self.prices[costume]
+            demand = self.demand[costume]
+            print(f"  Costume: {costume}, Stock: {stock}, Price: ${price:.2f}, Demand: {demand}")

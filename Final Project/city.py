@@ -19,4 +19,4 @@ class City:
     def report(self):
         print(f"Report for {self.name}:")
         for shop in self.costume_shops:
-            shop.report_stock() #method from costumeshop class
+            shop.report() #method from costumeshop class

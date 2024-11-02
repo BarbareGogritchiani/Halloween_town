@@ -29,3 +29,9 @@ class Customer:
         print(f"{self.name}'s shopping report:")
         print(f"Remaining budget: {self.budget}")
         print("Shopping list:", ", ".join(self.shopping_list))
+
+#for polymorphism
+    def report(self):
+        print(f"Customer Report: {self.name}")
+        print(f"Budget: ${round(self.budget,2)}")
+        print(f"Shopping List: {', '.join(self.shopping_list)}")
