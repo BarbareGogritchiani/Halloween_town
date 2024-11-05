@@ -1,0 +1,16 @@
+Customer: barbare
+Remaining Budget: $20
+Purchased Items:
+- Zombie x 2
+
+Customer: nino
+Remaining Budget: $460
+Purchased Items:
+- John Martson x 1
+- Sherrif x 1
+
+Customer: luka
+Remaining Budget: $380
+Purchased Items:
+- Cruella de Vil x 1
+

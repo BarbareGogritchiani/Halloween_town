@@ -35,7 +35,6 @@ shop1.adjust_price("Zombie",40) #price will be changed
 
 shop1.adjust_stock("Sherrif",75) # isn't in shop1
 shop2.adjust_stock("Sherrif",75) #stock will be 75 instead of 60
-
 city.simulate_demand()
 # city.report()
 
@@ -63,7 +62,6 @@ customer2.buy_costume(shop2,"Sherrif",1)
 customer3.buy_costume(shop2, "Cruella de Vil", 1) #this costume isn't in this shop
 customer3.buy_costume(shop3, "Cruella de Vil", 1)
 
-
 #report for each customer
 customer1.shop_report()
 customer2.shop_report()
@@ -75,3 +73,11 @@ city.report()
 customer1.report()
 shop1.report()
 
+# print(customer3.check_budget(200))
+shop3.adjust_stock("Cruella de Vil",1)
+customer3.buy_costume(shop3, "Cruella de Vil", 2)
+shop3.report()
+
+customer1.save_data_to_file("customer_data.txt")
+customer2.save_data_to_file("customer_data.txt")
+customer3.save_data_to_file("customer_data.txt")

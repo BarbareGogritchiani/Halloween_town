@@ -13,7 +13,7 @@ class City:
         for shop in self.costume_shops: #for each shop
             for costume in shop.costumes: #for each costume in shop
                 demand_percentage = random.uniform(0.1, 1.0)  # random demand percentage
-                shop.adjust_demand(costume, int(self.population * demand_percentage))
+                shop.adjust_demand(costume, int(self.population  * demand_percentage))
                 print(costume , round(demand_percentage,2)) #prints costume and its demand
 
     def report(self):
